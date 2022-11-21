@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    <title>Indicação</title>
+    <style>
+        body{
+			margin: 0;
+			padding: 0;
+			background-attachment: fixed;
+			background-color: gold;
+			width: 100%;
+			height: 100%;
+			font-family: 'Open Sans', sans-serif;
+			color: white;
+			background: yellow;
+        }
+
+        .menu{
+			margin-top: 0.5cm;
+			background: black;
+			height: 3cm;
+			width: auto;
+			border-radius: 0.5cm;
+			position: sticky;
+            
+        }
+
+        table{
+			font-size: 1cm;
+			text-align: left;
+			width: 80%;
+        }
+
+        td{
+			margin-left: 5mm;
+			margin-right: 5mm;
+        }
+
+        hr{
+			background-color: black;
+			height: 3px;
+			width: 90%;
+			border: none;
+        }
+
+        a{
+			text-decoration: underline;
+			color: lightgray;
+        }
+
+        a:hover.home, :hover.dicas, :hover.sobre, :hover.indic {
+			color: gold;
+		}
+
+        .imgdiv {
+        width: 7%;
+		height: 9vh;
+		background-image: url('imgs/log.png');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: black;
+		top: -95px;
+		right: 580px;
+		cursor: pointer;
+        }
+
+        .painel{
+			background-color: white;
+			border-style: solid;
+			border-radius: 1cm;
+			border-size: 2mm;
+			border-color: black;
+			height: 100%;
+			width: 95%;
+			border-radius: 0.5cm;
+			margin-top: auto;
+			margin-bottom: 10mm;
+			
+		}
+
+		p{
+			text-align: left;
+			width: 90%;
+			font-size: 6mm;
+			font-family: 'Montserrat', sans-serif;
+			color: black;
+			
+		}
+
+		.text_about{
+			width: 90%;
+			height:auto;
+			background: white;
+			border-style: solid;
+			border-radius: 1cm;
+			border-size: 2mm;
+			border-color: black;
+			border-radius: 0.5cm;
+			word-break: normal;
+		}
+
+		.text_center {
+			text-align: left;
+			width: 90%;
+			font-size: 6mm;
+			font-family: 'Montserrat', sans-serif;
+			color: black;
+			text-align: center;
+			text-decoration: black;
+			
+		}
+
+		#capadolivro{
+			width: 6.5cm;
+			height: 8.5cm;
+		}
+
+		.buylink{
+			color: darkblue;
+			text-align: center;
+			height: auto;
+			width: 55%;
+			float: left;
+			font-family: 'Montserrat', sans-serif;
+			margin-bottom: 6mm;
+			margin-left: -15%;
+		}
+
+		.sessãohome{
+			word-break: normal;
+			text-align: left;
+			width: 85%;
+			color: black;
+			font-family: 'Montserrat', sans-serif;
+		}
+    </style>
+</head>
+<body>
+    <center>
+		<table cellspacing="20mm" class="menu">
+			<tr>
+				<td><a href="index.html" class="home" target="_self">Home</a></td>
+				<td><a href="dicas.html" class="dicas" target="_self">Dicas de leitura</a></td>
+				<td><a href="sobre.html" class="sobre" target="_self">A J-BOOK</a></td>
+				<td><a href="indic.html" class="indic" target="_self">Indicação do Dia</a></td>
+			</tr>
+		</table>
+
+        <div class="imgdiv" onclick="window.location='index.html';">
+			
+		</div>
+		<section class="sessâohome">
+        <div class="text_about">
+            
+           <p class="text_center"> <b> A seguir uma indicação de livro</p>
+		   <hr></b>
+			<p class="text_center"><b> Do mil ao milão <br> (Thiago Nigro)</b></p>
+			<div>
+				<img src="imgs/ti.jpg" id="capadolivro">
+			</div>
+			<p><b>Em seu primeiro livro, Thiago Nigro, criador da plataforma O Primo Rico, ensina aos leitores os três pilares para atingir 
+				a independência financeira: gastar bem, investir melhor e ganhar mais. Por meio de dados e de sua própria experiência como 
+				investidor e assessor, Nigro mostra que a riqueza é possível para todos – basta estar disposto a aprender e se dedicar.</b></p>
+				
+			<h3>
+				...
+				<a href="https://www.amazon.com.br/Mil-Milhão-Sem-Cortar-Cafezinho/dp/8595083274" target="_blank" class="buylink">Link para compra</a>
+			</h3>
+			</section>
+
+        </div>
+</body>
+</html>

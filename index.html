@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+<title> Livros - Pagina Inicial </title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			background-attachment: fixed;
+			background-color: gold;
+			width: 100%;
+			height: 100%;
+			font-family: 'Open Sans', sans-serif;
+			color: white;
+			background: yellow;
+		}
+		table{
+			font-size: 1cm;
+			text-align: left;
+			width: 80%;
+
+		}
+		td{
+			margin-left: 5mm;
+			margin-right: 5mm;
+		}
+		a{
+			text-decoration: underline;
+			color: lightgray;
+		}
+		hr{
+			background-color: black;
+			height: 3px;
+			width: 90%;
+			border: none;
+		}
+		h1, h2{
+			width: 55%;
+			height: auto;
+			background-color: darkgrey;
+			border-radius: 8mm;
+			text-align: center;
+			border-style: solid;
+			border-size: 2mm;
+			border-color: black;
+		}	
+		p{
+			font-family: 'Montserrat', sans-serif;
+			font-size: 6mm;
+		}
+		.menu{
+			margin-top: 0.5cm;
+			background: black;
+			height: 3cm;
+			width: auto;
+			border-radius: 0.5cm;
+			position: sticky;
+		}
+		.paineldelivros{
+			background-color: white;
+			border-style: solid;
+			border-radius: 1cm;
+			border-size: 2mm;
+			border-color: black;
+			height: 100%;
+			width: 95%;
+			border-radius: 0.5cm;
+			margin-top: auto;
+			margin-bottom: 10mm;
+			
+		}
+		.sessãohome{
+			word-break: normal;
+			text-align: left;
+			width: 85%;
+			color: black;
+			font-family: 'Montserrat', sans-serif;
+		}
+		.buylink{
+			color: darkblue;
+			text-align: center;
+			height: auto;
+			width: 55%;
+			float: left;
+			font-family: 'Montserrat', sans-serif;
+			margin-bottom: 6mm;
+			margin-left: -15%;
+		}
+		#título-autor{
+			text-align: center;
+			font-family: 'Open Sans', sans-serif;
+		}
+		#sinopse{
+			text-align: left;
+			font-family: 'Montserrat', sans-serif;
+		}
+		#capadolivro{
+			width: 6.5cm;
+			height: 8.5cm;
+			
+			
+		}
+		.rodape{
+			width: 96%;
+			background-color: lightgrey;
+			font-family: 'OpenSans', sans-serif;
+			font-size: 0.5cm;
+			height: auto;
+			color: black;
+		}
+	#apDiv1 {
+	position: absolute;
+	left: 588px;
+	top: 166px;
+	width: 352px;
+	height: 104px;
+	z-index: 1;
+}
+    #apDiv2 {
+	position: absolute;
+	left: 594px;
+	top: 170px;
+	width: 406px;
+	height: 110px;
+	z-index: 1;
+}
+
+	.imgdiv {
+		width: 7%;
+		height: 9vh;
+		background-image: url('imgs/log.png');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: black;
+		top: -110px;
+		right: 580px;
+		cursor: pointer;
+			
+		
+	}
+
+	a:hover.home, :hover.dicas, :hover.sobre, :hover.indic {
+			color: gold;
+		}
+
+
+	
+
+    </style>
+</head>
+<body>	
+	
+
+	<center>
+		
+		<table cellspacing="20mm" class="menu">
+			<tr>
+				<td><a href="index.html" class="home" target="_self">Home</a></td>
+				<td><a href="dicas.html" class="dicas" target="_self">Dicas de leitura</a></td>
+				<td><a href="sobre.html" class="sobre" target="_self">A J-BOOK</a></td>
+				<td><a href="indic.html" class="indic" target="_self">Indicação do Dia</a></td>
+			</tr>
+	  </table>
+		<br>
+		<div class="imgdiv" onclick="window.location='index.html';">
+			
+		</div>
+		
+		<div class="paineldelivros"> <!-- Região com livros em destaque -->
+			<h1 style="color: black;"><i>J-BOOK</i></h1>
+			<h2 style="color: black;"><i>O melhor site de livros do Brasil!</i></h2>
+			<hr>
+			<section class="sessãohome">
+					<h3 style="text-align: center;">Os melhores livros são anunciados aqui. Veja abaixo os destaques deste mês!</h3>
+			</section>
+			<hr>
+			<section class="sessãohome"> <!-- Sessão que contém a capa, título, autor, sinopse e link para compra | 101 dias em Bagdá-->
+					<div id="título-autor"><!-- Título e autor -->
+						<h3><i>101 dias em Bagd</i>á</h3>
+						<h3>(Âsne Seierstad)</h3>
+					</div>
+					<center>
+						
+						<div ><!-- Objeto de poscionamento da capa do livro -->
+							<img src="imgs/101diasembagda.jpeg" id="capadolivro">
+						</div>
+					</center>
+					<p id="sinopse"> <!-- Sinopse do livro -->
+						Da mesma forma que em O livreiro de Cabul, desde o momento em que chegou a Bagdá, com um visto de dez dias, a autora estava determinada a descobrir os novos segredos daquela terra antiga e a conhecer as condições reais de vida dos iraquianos. 101 DIAS EM BAGDÁ apresenta ao leitor a vida cotidiana sob a constante ameaça de ataques — primeiro do governo iraquiano e depois dos bombardeios americanos. Passando do silêncio ensurdecedor da era de Saddam Hussein às explosões que interromperam o fornecimento de eletricidade, água e outros serviços essenciais no país, Seierstad revela o que acontece às pessoas diante de situações-limite: do que sentem mais falta quando seu mundo se transforma num campo de guerra? O que denunciam quando não há censura?
+					</p>
+					<h3>
+						<a href="https://www.saraiva.com.br/101-dias-em-bagda-1563982/p" target="_blank" class="buylink">Link para compra</a>
+					</h3>
+			</section>
+			<br>
+			<br>
+			<hr>
+			<section class="sessãohome"> <!-- Sessão que contém a capa, título, autor, sinopse e link para compra | Um amor incômodo-->
+					<div id="título-autor"><!-- Título e autor -->
+						<h3><i>Um amor incômodo</i></h3>
+						<h3>(Edna Ferrante)</h3>
+					</div>
+					<center>
+						<div><!-- Objeto de poscionamento da capa do livro -->
+							<img src="imgs/umamorincomodo.jpeg" id="capadolivro">
+						</div>
+					</center>
+					<p id="sinopse"> <!-- Sinopse do livro -->
+						Aos quarenta e cinco anos, Delia retorna a sua cidade natal, Nápoles, na Itália, para enterrar a mãe, Amalia, encontrada morta numa praia em circunstâncias suspeitas: a humilde costureira, que se acostumou a esconder a beleza com peças simples e sem graça, usava nada além de um sutiã caro no momento da morte.Revelações perturbadoras a respeito dos últimos dias de Amalia impelem Delia a descobrir a verdade por trás do trágico acontecimento. Avançando pelas ruas caóticas e sufocantes de sua infância, a filha vai confrontar os três homens que figuraram de forma proeminente no passado de sua mãe: o irmão irascível de Amalia, conhecido por lançar insultos indistintamente a conhecidos e estranhos; o ex-marido, pai de Delia, um pintor medíocre que não se importava em desrespeitar a esposa em público; e Caserta, uma figura sombria e lasciva, cujo casamento nunca o impediu de cortejar outras mulheres.Na mistura desorientadora de fantasia e realidade suscitada pelas emoções que vêm à tona dessa investigação, Delia se vê obrigada a reviver um passado cuja crueza ganha contornos vívidos na prosa elegante de Elena Ferrante. 
+					</p>
+					<h3>
+						<a href="https://www.saraiva.com.br/um-amor-incomodo-9421359/p" target="_blank" class="buylink">Link para compra</a>
+					</h3>
+			</section>
+			<br>
+			<br>
+			<hr>
+			<section class="sessãohome"> <!-- Sessão que contém a capa, título, autor, sinopse e link para compra | A mulher silenciosa-->
+					<div id="título-autor"><!-- Título e autor -->
+						<h3><i>A Mulher Silenciosa</i></h3>
+						<h3>(A.S.A Harrison)</h3>
+					</div>
+					<center>
+						<div><!-- Objeto de poscionamento da capa do livro -->
+							<img src="imgs/amulhersilenciosa.jpeg" id="capadolivro">
+						</div>
+					</center>
+					<p id="sinopse"> <!-- Sinopse do livro -->
+						Jodi e Todd estão juntos há 20 anos e, aparentemente, levam uma vida invejável. Todd é um empreiteiro bem-sucedido que pode bancar alguns luxos, como o enorme apartamento com uma vista deslumbrante para o lago, um Porsche (dele) e um Audi (dela) na garagem, e o estilo de vida de Jodi. Psicoterapeuta, ela atende em casa apenas dois clientes por dia, e tem tempo de sobra para as sessões de pilates, as aulas de arranjos florais, os passeios com Freud, o golden retriever do casal, e o preparo das refeições gourmet de que tanto gosta. Jodi ainda fica ansiosa ao ouvir a chave do marido abrindo a porta. Todd diz que nunca encontrará uma mulher igual a ela. Essa fachada perfeita, porém, está prestes a ruir. Todd é um adúltero incurável, e Jodi sabe disso. Ela é a esposa silenciosa, preparada para tolerar as traições do marido com o intuito de manter as aparências. Até que Todd sai de casa — para viver com uma mulher com metade da idade dela, filha de seu melhor amigo. Magoada, humilhada e, por fim, financeiramente abalada, Jodi começa a contemplar o assassinato como uma opção razoável. Contado alternadamente nas perspectivas dele e dela, A mulher silenciosa é um livro sobre um casamento à beira do fim, um casal na direção da catástrofe, concessões que não podem ser feitas e promessas que não serão cumpridas. Um thriller psicológico sofisticado, que seduz o leitor desde a primeira página.
+					</p>
+					<h3>
+						<a href="https://www.saraiva.com.br/a-mulher-silenciosa-7415526/p" target="_blank" class="buylink">Link para compra</a>
+					</h3>
+			</section>
+			<br>
+			<br>
+			<hr>
+			<section class="sessãohome"> <!-- Sessão que contém a capa, título, autor, sinopse e link para compra | Lógica de Programação-->
+					<div id="título-autor"><!-- Título e autor -->
+						<h3><i>Algoritimos e Lógica de Programação</i></h3>
+						<h3>(Marco A. Furlan de Souza; Marcelo Marques Gomes; Marcio Vieira; Ricardo Concilio)</h3>
+					</div>
+					<center>
+						<div><!-- Objeto de poscionamento da capa do livro -->
+							<img src="imgs/algoritmos.jpeg" id="capadolivro">
+						</div>
+					</center>
+					<p id="sinopse"> <!-- Sinopse do livro -->
+						Com uma linguagem simples e didática, o livro procura tornar a lógica de programação prática, além de mostrar aos estudantes um caminho mais adequado na construção dos algoritmos. A abstração de procedimentos e dados é um dos maiores problemas para os estudantes nos cursos introdutórios, e, para tentar escapar das dificuldades, os autores utilizam uma arquitetura de computador simples. Um dos principais objetivos do livro é fazer com que o estudante consiga no futuro relacionar os aspectos abstratos da computação com sua implementação, e ainda incentivar a necessidade de escrever os algoritmos antes de sua implementação propriamente dita. 
+					</p>
+					<h3>
+						<a href="https://www.saraiva.com.br/algoritimos-e-logica-de-programacao-2-ed-3420551/p" target="_blank" class="buylink">Link para compra</a>
+					</h3>
+					<br>
+					<br>
+			</section>
+		</div>
+		<br>
+		<div class="rodape"><!--Rodapé do site-->
+	
+		</div>
+		<br>
+</center>
+</body>
+</html>
